@@ -1,6 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import Root from 'Root'
 import App from 'Components/App'
 
-ReactDOM.render(<App/>, document.querySelector('#root'))
+const jsx = (
+  <Root>
+    <App/>
+  </Root>
+)
+
+ReactDOM.render(jsx, document.querySelector('#root'))
