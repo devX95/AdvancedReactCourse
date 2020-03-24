@@ -1,12 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Root from 'Root'
-import App from 'Components/App'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+import Root from "Root";
+import App from "Components/App";
 
 const jsx = (
   <Root>
-    <App/>
+    <BrowserRouter>
+      <Route path="/" component={App}/>
+    </BrowserRouter>
   </Root>
-)
+);
 
-ReactDOM.render(jsx, document.querySelector('#root'))
+ReactDOM.render(jsx, document.querySelector("#root"));
